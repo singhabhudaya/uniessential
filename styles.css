@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+header .brand h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ecf0f1; /* Light grayish text color */
+}
+
+header .brand p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ecf0f1; /* Light grayish text color */
+}
+
+.intro {
+    padding: 20px;
+    text-align: center;
+    background-color: #ecf0f1;
+    margin-bottom: 20px;
+}
+
+.intro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Deep blue-gray heading color */
+}
+
+.intro p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #7f8c8d; /* Slightly darker gray for body text */
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    max-width: 300px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #2c3e50; /* Deep blue-gray for product titles */
+}
+
+.product-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+.buy-now {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.buy-now:hover {
+    background-color: #1e8449;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        min-width: 80%;
+        max-width: 80%;
+    }
+}
