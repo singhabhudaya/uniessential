@@ -17,14 +17,14 @@ header .brand h1 {
     margin: 0;
     font-size: 36px;
     font-weight: bold;
-    color: #ecf0f1; /* Light grayish text color */
+    color: #ecf0f1;
 }
 
 header .brand p {
     margin: 5px 0 0;
     font-size: 16px;
     font-weight: 300;
-    color: #ecf0f1; /* Light grayish text color */
+    color: #ecf0f1;
 }
 
 .intro {
@@ -37,14 +37,14 @@ header .brand p {
 .intro h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #2c3e50; /* Deep blue-gray heading color */
+    color: #2c3e50;
 }
 
 .intro p {
     font-size: 16px;
     max-width: 600px;
     margin: 0 auto;
-    color: #7f8c8d; /* Slightly darker gray for body text */
+    color: #7f8c8d;
 }
 
 .product-list {
@@ -55,6 +55,7 @@ header .brand p {
     overflow-x: auto;
     padding: 20px;
     gap: 20px;
+    flex-wrap: nowrap; /* Keeps items in a single line on larger screens */
 }
 
 .product-item {
@@ -78,7 +79,7 @@ header .brand p {
 .product-item h2 {
     font-size: 18px;
     margin: 10px 0;
-    color: #2c3e50; /* Deep blue-gray for product titles */
+    color: #2c3e50;
 }
 
 .product-item p {
@@ -111,8 +112,18 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden; /* Remove horizontal scroll */
+        overflow-y: auto; /* Enable vertical scroll */
+        flex-wrap: wrap; /* Wrap items vertically */
+        padding: 0 20px;
+    }
+
     .product-item {
-        min-width: 80%;
-        max-width: 80%;
+        min-width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px; /* Add space between items */
     }
 }
