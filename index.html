@@ -1,43 +1,32 @@
-const products = [
-    {
-        name: 'Data Cable Set Kit',
-        description: 'A versatile data cable set kit that includes multiple connectors for all your devices. Perfect for travel and everyday use.',
-        imageUrl: 'https://i.imgur.com/wdYj9xT.jpg',
-    },
-    {
-        name: 'Eco-friendly Water Bottle',
-        description: 'Stay hydrated with our eco-friendly, reusable water bottle.',
-        imageUrl: 'https://via.placeholder.com/300x200',
-    },
-    {
-        name: 'Portable Phone Charger',
-        description: 'Keep your devices charged on the go with our compact charger.',
-        imageUrl: 'https://via.placeholder.com/300x200',
-    },
-    {
-        name: 'Noise-Cancelling Headphones',
-        description: 'Enjoy your music in peace with our noise-cancelling headphones.',
-        imageUrl: 'https://via.placeholder.com/300x200',
-    },
-    {
-        name: 'Minimalist Wallet',
-        description: 'Slim down your pocket with our minimalist leather wallet.',
-        imageUrl: 'https://via.placeholder.com/300x200',
-    },
-];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIIESSENTIALS - Product Listing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <h1>UNIIESSENTIALS</h1>
+            <p>Your one-stop shop for essential products</p>
+        </div>
+    </header>
 
-const productList = document.getElementById('productList');
+    <section class="intro">
+        <h2>Welcome to UNIIESSENTIALS</h2>
+        <p>Browse through our exclusive collection of essential products designed to make your life easier and more convenient.</p>
+    </section>
 
-products.forEach(product => {
-    const productItem = document.createElement('div');
-    productItem.className = 'product-item';
+    <section class="product-list" id="productList">
+        <!-- Products will be dynamically inserted here by JavaScript -->
+    </section>
 
-    productItem.innerHTML = `
-        <img src="${product.imageUrl}" alt="${product.name}">
-        <h2>${product.name}</h2>
-        <p>${product.description}</p>
-        <button class="buy-now">Buy Now</button>
-    `;
+    <footer>
+        <p>&copy; 2024 UNIIESSENTIALS. All rights reserved.</p>
+    </footer>
 
-    productList.appendChild(productItem);
-});
+    <script src="script.js"></script>
+</body>
+</html>
