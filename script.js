@@ -2,7 +2,7 @@ const products = [
     {
         name: 'Data Cable Set Kit',
         description: 'A versatile data cable set kit that includes multiple connectors for all your devices. Perfect for travel and everyday use.',
-        imageUrl: 'https://imgur.com/a/wdYj9xT',
+        imageUrl: 'https://i.imgur.com/wdYj9xT.jpg',
     },
     {
         name: 'Eco-friendly Water Bottle',
