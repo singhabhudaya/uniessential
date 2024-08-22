@@ -10,9 +10,9 @@ const products = [
         imageUrl: 'https://i.imgur.com/wSz3TDE.jpeg',
     },
     {
-        name: 'Portable Phone Charger',
-        description: 'Keep your devices charged on the go with our compact charger.',
-        imageUrl: 'https://via.placeholder.com/300x200',
+        name: 'Wireless Gamepad X3',
+        description: 'Game on!, with X3 gamepad with phone holder.',
+        imageUrl: 'https://i.imgur.com/XQvwSz9.png',
     },
     {
         name: 'Noise-Cancelling Headphones',
