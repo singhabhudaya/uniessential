@@ -15,14 +15,14 @@ const products = [
         imageUrl: 'https://i.imgur.com/XQvwSz9.png',
     },
     {
-        name: 'Noise-Cancelling Headphones',
-        description: 'Enjoy your music in peace with our noise-cancelling headphones.',
-        imageUrl: 'https://via.placeholder.com/300x200',
+        name: 'Portable Projector powerbank powered ',
+        description: 'Binge watch your favourite shows anywhere',
+        imageUrl: 'https://i.imgur.com/edLTZB0.jpeg',
     },
     {
-        name: 'Minimalist Wallet',
-        description: 'Slim down your pocket with our minimalist leather wallet.',
-        imageUrl: 'https://via.placeholder.com/300x200',
+        name: 'Wireless Magsafe see through Powerbank',
+        description: 'Magsafe powerbank with inbuilt all type cables',
+        imageUrl: 'https://i.imgur.com/0NiuS3q.jpeg',
     },
 ];
 
