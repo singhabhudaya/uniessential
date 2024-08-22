@@ -5,9 +5,9 @@ const products = [
         imageUrl: 'https://i.imgur.com/2iF8uYU.jpeg',
     },
     {
-        name: 'Eco-friendly Water Bottle',
-        description: 'Stay hydrated with our eco-friendly, reusable water bottle.',
-        imageUrl: 'https://via.placeholder.com/300x200',
+        name: 'Universal Adapter with built-in Powerbank',
+        description: 'Charge your devices with walk outlet or on the move.',
+        imageUrl: 'https://i.imgur.com/wSz3TDE.jpeg',
     },
     {
         name: 'Portable Phone Charger',
