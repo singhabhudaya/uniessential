@@ -119,4 +119,11 @@ footer {
         width: 90%; /* Adjust width for mobile */
         margin-bottom: 20px;
     }
+    .product-item .price {
+    font-size: 16px;
+    color: #27ae60; /* Same as the buy-now button */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
 }
