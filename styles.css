@@ -1,11 +1,13 @@
+/* General body styling remains unchanged */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    color: #333;
 }
 
+/* Header styling */
 header {
     background-color: #2c3e50;
     color: #ecf0f1;
@@ -47,6 +49,7 @@ header .brand p {
     color: #7f8c8d;
 }
 
+/* Product List Styling */
 .product-list {
     display: flex;
     justify-content: center;
@@ -58,74 +61,65 @@ header .brand p {
 }
 
 .product-item {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    padding: 15px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
 
 .product-item:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
 .product-item img {
     max-width: 100%;
     border-radius: 10px;
+    object-fit: cover;
 }
 
+/* Product Name Styling */
 .product-item h2 {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #2c3e50;
-    font-family: 'Segoe UI', sans-serif; /* Font similar to image */
-    letter-spacing: 2px; /* Spread out letters */
-    font-weight: 400;
-    text-transform: uppercase;
-    transition: color 0.3s ease; /* Smooth hover transition */
-}
-
-.product-item h2:hover {
-    color: #000; /* Change to dark black on hover */
-}
-
-.product-item p {
-    font-size: 14px;
-    color: #666;
-}
-
-.product-item .price {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
-    color: #999999;
-    margin: 10px 0;
-    border-top: 1px solid #eee;
-    padding-top: 10px;
+    margin: 10px 0 5px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #000;
 }
 
-.buy-now {
-    background-color: #27ae60;
-    color: #fff;
-    padding: 10px;
+/* Product Price Styling */
+.product-item .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000; /* Price color is black */
+    margin-bottom: 15px;
+}
+
+/* Buy Now Button - Black Premium Style */
+.product-item .buy-now {
+    background-color: #000; /* Premium black */
+    color: white;
     border: none;
+    padding: 12px 24px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500; /* Slightly bold for premium feel */
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.buy-now:hover {
-    background-color: #1e8449;
+.product-item .buy-now:hover {
+    background-color: #333; /* Slightly lighter black on hover */
+    transform: translateY(-2px); /* Adds a slight lift on hover */
 }
 
+.product-item h2 + .price {
+    margin-top: 5px;
+}
+
+/* Footer styling */
 footer {
     background-color: #2c3e50;
     color: #ecf0f1;
@@ -146,11 +140,13 @@ footer {
         margin-bottom: 20px;
     }
 
-    .product-item h2 {
-        font-size: 16px; /* Slightly smaller font for mobile */
-    }
-
     .product-item .price {
         font-size: 16px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .product-item h2 {
+        font-size: 16px; /* Slightly smaller font for mobile */
     }
 }
