@@ -7,6 +7,20 @@ const products = [
         buyUrl: 'https://wa.me/+918400279228?text=I%20would%20like%20to%20buy%20your%20data%20cable%20set%20kit!'
     },
     {
+        name: 'Mini Portable Printer',
+        description: 'A compact printer for sticky notes, diagrams, and stickers. Print your ideas instantly!',
+        imageUrl: '',  // Add your image URL here
+        price: '₹ 799',
+        buyUrl: 'https://wa.me/+918400279228?text=I%20would%20like%20to%20buy%20your%20mini%20portable%20printer!'
+    },
+    {
+        name: 'Rechargeable Type-C Mini Packet Sealer',
+        description: 'Seal opened food packets with ease. Compact and portable with rechargeable Type-C port.',
+        imageUrl: '',  // Add your image URL here
+        price: '₹ 549',
+        buyUrl: 'https://wa.me/+918400279228?text=I%20would%20like%20to%20buy%20your%20rechargeable%20type-c%20mini%20packet%20sealer!'
+    },
+    {
         name: 'Universal Adapter with built-in Powerbank',
         description: 'Charge your devices with any outlet or on the move.',
         imageUrl: 'https://i.imgur.com/wSz3TDE.jpeg',
