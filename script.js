@@ -4,35 +4,35 @@ const products = [
         description: 'A versatile data cable set kit that includes multiple connectors for all your devices. Perfect for travel and everyday use.',
         imageUrl: 'https://i.imgur.com/2iF8uYU.jpeg',
         price: '₹ 249',
-        buyUrl: 'https://yourstore.com/product/data-cable-set-kit'
+        buyUrl: 'https://wa.me/+918400279228?text=I%would%like%to%buy%your%data%cable%set%kit!'
     },
     {
         name: 'Universal Adapter with built-in Powerbank',
         description: 'Charge your devices with any outlet or on the move.',
         imageUrl: 'https://i.imgur.com/wSz3TDE.jpeg',
         price: '₹ 1249',
-        buyUrl: 'https://yourstore.com/product/universal-adapter-powerbank'
+        buyUrl: 'https://wa.me/+918400279228?text=I%would%like%to%buy%your%universal%adapter%with%powerbank!'
     },
     {
         name: 'Wireless Gamepad X3',
         description: 'Game on with the X3 gamepad with phone holder.',
         imageUrl: 'https://i.imgur.com/XQvwSz9.png',
         price: '₹ 649',
-        buyUrl: 'https://yourstore.com/product/wireless-gamepad-x3'
+        buyUrl: 'https://wa.me/+918400279228?text=I%would%like%to%buy%your%wireless%gamepad%with%phone%holder!'
     },
     {
         name: 'Portable Projector powerbank powered',
         description: 'Binge watch your favourite shows anywhere.',
         imageUrl: 'https://i.imgur.com/edLTZB0.jpeg',
         price: '₹ 1499',
-        buyUrl: 'https://yourstore.com/product/portable-projector'
+        buyUrl: 'https://wa.me/+918400279228?text=I%would%like%to%buy%your%portable%projector'
     },
     {
         name: 'Wireless Magsafe See Through Powerbank',
         description: 'Magsafe powerbank with inbuilt all-type cables.',
         imageUrl: 'https://i.imgur.com/0NiuS3q.jpeg',
         price: '₹ 1249',
-        buyUrl: 'https://yourstore.com/product/wireless-magsafe-powerbank'
+        buyUrl: 'https://wa.me/+918400279228?text=I%would%like%to%buy%your%see%through%magsafe%powerbank!'
     }
 ];
 
