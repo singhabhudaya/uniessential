@@ -78,6 +78,15 @@ header .brand p {
     font-size: 18px;
     margin: 10px 0;
     color: #2c3e50;
+    font-family: 'Segoe UI', sans-serif; /* Font similar to image */
+    letter-spacing: 2px; /* Spread out letters */
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+.product-item h2:hover {
+    color: #000; /* Change to dark black on hover */
 }
 
 .product-item p {
@@ -109,21 +118,26 @@ footer {
     margin-top: 20px;
 }
 
+/* Mobile responsiveness */
 @media (max-width: 768px) {
     .product-list {
-        justify-content: center; /* Center align products on mobile */
-        padding: 0; /* Remove extra padding on mobile */
+        justify-content: center;
+        padding: 0;
     }
 
     .product-item {
-        width: 90%; /* Adjust width for mobile */
+        width: 90%;
         margin-bottom: 20px;
     }
-    .product-item .price {
-    font-size: 16px;
-    color: #27ae60; /* Same as the buy-now button */
-    font-weight: bold;
-    margin: 10px 0;
-}
 
+    .product-item .price {
+        font-size: 16px;
+        color: #27ae60;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .product-item h2 {
+        font-size: 16px; /* Slightly smaller font for mobile */
+    }
 }
