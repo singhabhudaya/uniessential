@@ -67,6 +67,12 @@ header .brand p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .product-item img {
@@ -94,6 +100,15 @@ header .brand p {
     color: #666;
 }
 
+.product-item .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #27ae60;
+    margin: 10px 0;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
 .buy-now {
     background-color: #27ae60;
     color: #fff;
@@ -104,6 +119,7 @@ header .brand p {
     font-size: 16px;
     margin-top: 10px;
     text-transform: uppercase;
+    transition: background-color 0.3s ease;
 }
 
 .buy-now:hover {
@@ -130,14 +146,11 @@ footer {
         margin-bottom: 20px;
     }
 
-    .product-item .price {
-        font-size: 16px;
-        color: #27ae60;
-        font-weight: bold;
-        margin: 10px 0;
-    }
-
     .product-item h2 {
         font-size: 16px; /* Slightly smaller font for mobile */
+    }
+
+    .product-item .price {
+        font-size: 16px;
     }
 }
