@@ -38,19 +38,27 @@ const products = [
 
 const productList = document.getElementById('productList');
 
-products.forEach(product => {
-    const productItem = document.createElement('div');
-    productItem.className = 'product-item';
+if (productList) {
+    const fragment = document.createDocumentFragment();
 
-    productItem.innerHTML = `
-        <img src="${product.imageUrl}" alt="${product.name}">
-        <h2>${product.name}</h2>
-        <p>${product.description}</p>
-        <p class="price">${product.price}</p>
-        <a href="${product.buyUrl}" target="_blank">
-            <button class="buy-now">Buy Now</button>
-        </a>
-    `;
+    products.forEach(product => {
+        const productItem = document.createElement('div');
+        productItem.className = 'product-item';
 
-    productList.appendChild(productItem);
-});
+        productItem.innerHTML = `
+            <img src="${product.imageUrl}" alt="${product.name}" loading="lazy">
+            <h2>${product.name}</h2>
+            <p>${product.description}</p>
+            <p class="price">${product.price}</p>
+            <a href="${product.buyUrl}" target="_blank" aria-label="Buy ${product.name}">
+                <button class="buy-now">Buy Now</button>
+            </a>
+        `;
+
+        fragment.appendChild(productItem);
+    });
+
+    productList.appendChild(fragment);
+} else {
+    console.error('Element with id "productList" not found');
+}
