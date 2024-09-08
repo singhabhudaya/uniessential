@@ -3,7 +3,7 @@ const products = [
         name: 'Data Cable Set Kit',
         description: 'A versatile data cable set kit that includes multiple connectors for all your devices. Perfect for travel and everyday use.',
         imageUrl: 'https://i.imgur.com/0f3KGnZ.jpeg',
-        price: '₹ 249',
+        price: '₹ 299',
         buyUrl: 'https://wa.me/+918400279228?text=I%20would%20like%20to%20buy%20your%20data%20cable%20set%20kit!'
     },
     {
