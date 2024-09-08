@@ -33,21 +33,7 @@ const products = [
         imageUrl: 'https://i.imgur.com/edLTZB0.jpeg',
         price: '₹ 1499',
         buyUrl: 'https://wa.me/+918400279228?text=I%20would%20like%20to%20buy%20your%20portable%20projector!'
-    },
-//    {
-//        name: 'Wireless Gamepad X3',
-//        description: 'Game on with the X3 gamepad with phone holder.',
-//        imageUrl: 'https://i.imgur.com/XQvwSz9.png',
-//        price: '₹ 649',
-//        buyUrl: 'https://wa.me/+918400279228?text=I%20would%20like%20to%20buy%20your%20wireless%20gamepad%20with%20phone%20holder!'
-//    },
-//    {
-//        name: 'Universal Adapter with built-in Powerbank',
-//        description: 'Charge your devices with any outlet or on the move.',
-//        imageUrl: 'https://i.imgur.com/wSz3TDE.jpeg',
-//        price: '₹ 1249',
-//        buyUrl: 'https://wa.me/+918400279228?text=I%20would%20like%20to%20buy%20your%20universal%20adapter%20with%20powerbank!'
-//    }
+    }
 ];
 
 const productList = document.getElementById('productList');
@@ -75,4 +61,12 @@ if (productList) {
     productList.appendChild(fragment);
 } else {
     console.error('Element with id "productList" not found');
+}
+
+function openNav() {
+    document.getElementById("sideMenu").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("sideMenu").style.width = "0";
 }
