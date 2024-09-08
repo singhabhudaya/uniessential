@@ -27,13 +27,13 @@ const products = [
         price: '₹ 1249',
         buyUrl: 'https://wa.me/+918400279228?text=I%20would%20like%20to%20buy%20your%20see%20through%20magsafe%20powerbank!'
     },
-    {
-        name: 'Portable Projector powerbank powered',
-        description: 'Binge watch your favourite shows anywhere.',
-        imageUrl: 'https://i.imgur.com/edLTZB0.jpeg',
-        price: '₹ 1499',
-        buyUrl: 'https://wa.me/+918400279228?text=I%20would%20like%20to%20buy%20your%20portable%20projector!'
-    }
+    //{
+   //     name: 'Portable Projector powerbank powered',
+//        description: 'Binge watch your favourite shows anywhere.',
+//        imageUrl: 'https://i.imgur.com/edLTZB0.jpeg',
+//        price: '₹ 1499',
+//        buyUrl: 'https://wa.me/+918400279228?text=I%20would%20like%20to%20buy%20your%20portable%20projector!'
+//    }
 ];
 
 const productList = document.getElementById('productList');
