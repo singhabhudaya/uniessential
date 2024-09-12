@@ -45,7 +45,7 @@ if (productList) {
         const productItem = document.createElement('div');
         productItem.className = 'product-item';
 
-        productItem.innerHTML = 
+        productItem.innerHTML = `
             <img src="${product.imageUrl}" alt="${product.name}" loading="lazy">
             <h2>${product.name}</h2>
             <p>${product.description}</p>
@@ -53,7 +53,7 @@ if (productList) {
             <a href="${product.buyUrl}" target="_blank" aria-label="Buy ${product.name}">
                 <button class="buy-now">Buy Now</button>
             </a>
-        ;
+        `;
 
         fragment.appendChild(productItem);
     });
