@@ -35,6 +35,52 @@ const products = [
 //        buyUrl: 'https://wa.me/+918400279228?text=I%20would%20like%20to%20buy%20your%20portable%20projector!'
 //    }
 ];
+// Modified products array
+];
+
+// Load cart from local storage
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+// Function to add products to cart
+function addToCart(product) {
+    cart.push(product);
+    localStorage.setItem('cart', JSON.stringify(cart)); // Store updated cart
+    alert(`${product.name} has been added to your cart!`);
+}
+
+// Dynamically render products
+const productList = document.getElementById('productList');
+if (productList) {
+    const fragment = document.createDocumentFragment();
+
+    products.forEach(product => {
+        const productItem = document.createElement('div');
+        productItem.className = 'product-item';
+
+        productItem.innerHTML = `
+            <img src="${product.imageUrl}" alt="${product.name}" loading="lazy">
+            <h2>${product.name}</h2>
+            <p>${product.description}</p>
+            <p class="price">${product.price}</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <a href="${product.buyUrl}" target="_blank" aria-label="Buy ${product.name}">
+                <button class="buy-now">Buy Now</button>
+            </a>
+        `;
+
+        // Add event listener for the "Add to Cart" button
+        productItem.querySelector('.add-to-cart').addEventListener('click', () => addToCart(product));
+
+        fragment.appendChild(productItem);
+    });
+
+    productList.appendChild(fragment);
+}
+
+// Open and close nav
+function openNav() { document.getElementById("sideMenu").style.width = "250px"; }
+function closeNav() { document.getElementById("sideMenu").style.width = "0"; }
+
 
 const productList = document.getElementById('productList');
 
