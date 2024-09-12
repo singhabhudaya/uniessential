@@ -1,4 +1,4 @@
-script.js: const products = [
+const products = [
     {
         name: 'Data Cable Set Kit',
         description: 'A versatile data cable set kit that includes multiple connectors for all your devices. Perfect for travel and everyday use.',
